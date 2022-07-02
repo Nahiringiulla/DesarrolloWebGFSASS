@@ -1,0 +1,39 @@
+/*NAVEGADOR DE TODA LA WEB*/
+
+nav{
+    width: 100%;
+    background-color: $ColorEncabezado ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+        list-style: none;
+        display:flex;
+        li{
+            padding: 10px;
+            margin-right: 40PX;
+        }
+    }
+}
+.titulosnav{
+    text-decoration: none;
+    text-align: center;
+    font-weight:bold;
+    color: $ColorBlanco;
+}
+.logo{
+    margin-left: 15PX;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px){
+nav ul{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+.navbar-toggler{
+    background-color: $ColorBlanco;
+    }
+}    

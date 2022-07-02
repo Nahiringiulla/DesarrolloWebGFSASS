@@ -1,0 +1,128 @@
+/*INICIO*/
+
+/* vista desktop */
+@media only screen and (min-width: 768px){
+    .Inicio{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .presentacion1{
+        color: $ColorTexto;
+        font-size: 30px;
+        margin-left: 60px;
+        margin-top: 60px;
+        font-weight:bold;
+        text-decoration: none;
+    }
+    .GF{
+        color:$ColorRosa;
+        text-decoration: none;
+        text-emphasis: none;
+    }
+    .presentacion2{
+        display: flex;
+        padding-top: 60px;
+        color:$ColorTexto;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .presentacion2bis{
+        display: flex;
+        padding-top: 5px;
+        color:$ColorTexto;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .presentacion3{
+        color:$ColorTexto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 20px;
+        column-gap: 30px;
+        padding: 0px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-left:60px ;
+    }
+    .desc{
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        li{
+            margin-left: 15px;
+        }
+    }
+    .videoinicio{
+        padding:20px;
+        margin-left: 80px;
+    }
+}
+/* vista mobile */
+@media only screen and (max-width: 767px){
+    .Inicio{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+    }
+    .presentacion1{
+        color:$ColorTexto;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 60px;
+        font-weight:bold;
+    }
+    .GF{
+        color:$ColorRosa;
+        text-decoration: none;
+    }
+    .presentacion2{
+        display: flex;
+        padding-top: 60px;
+        color:$ColorTexto;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .presentacion2bis{
+        display: flex;
+        padding-top: 5px;
+        color:$ColorTexto;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .presentacion3{
+        color:$ColorTexto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 20px;
+        column-gap: 30px;
+        padding: 0px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left:20px ;
+    }
+    .desc{
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        li{
+            margin-left: 15px;
+        }
+    }
+    .videoinicio{
+        padding:20px;
+        margin-bottom: 3px;
+        img{
+            width: 100%;
+        }
+    }
+}
+    

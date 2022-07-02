@@ -1,0 +1,36 @@
+/*PÁGINA GALERIA*/
+
+.ContenedorCarrusel h5{
+    color:$ColorBlanco;
+    font-weight: bold;
+    font-size: 20px;
+}
+ 
+/* vista desktop */
+@media only screen and (min-width: 768px){
+.ContenedorCarrusel{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px
+}
+}
+/* vista mobile */
+@media only screen and (max-width: 767px){
+.ContenedorCarrusel{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px
+}
+}
