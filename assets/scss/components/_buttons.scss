@@ -1,0 +1,8 @@
+/*PÁGINA CONTACTO - BOTON*/
+
+.btn{
+    width: map-get($boton , "tamaño" );
+    margin-top: map-get($boton , "margentop" );
+    margin-bottom: map-get($boton , "margenbotton" );
+    margin-left:map-get($boton , "margenleft" );
+}

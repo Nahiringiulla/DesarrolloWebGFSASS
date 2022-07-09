@@ -1,9 +1,8 @@
 /*FOOTER DE TODA LA WEB*/
 
 footer{
+    @include Sizes (100%, 50px);
     color:$ColorBlanco;
-    width: 100%;
-    height: 50px;
     background-color: $ColorEncabezado;
     display: flex;
     align-items: center;

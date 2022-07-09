@@ -1,0 +1,12 @@
+@mixin PropiedadesGrid ($display,$colums,$rows,$rowgap,$columngap){
+    display: $display;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    row-gap: $rowgap;
+    column-gap: $columngap;
+}
+
+@mixin Sizes ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}

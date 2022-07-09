@@ -7,13 +7,10 @@
   font-family: sans-serif;
 }
 
-body {
-  background-color: #F4F4F4;
-}
-
 /*NAVEGADOR DE TODA LA WEB*/
 nav {
   width: 100%;
+  height: auto;
   background-color: #1B2030;
   display: flex;
   align-items: center;
@@ -52,122 +49,20 @@ nav ul li {
     background-color: white;
   }
 }
-/*FOOTER DE TODA LA WEB*/
-footer {
-  color: white;
-  width: 100%;
-  height: 50px;
-  background-color: #1B2030;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-footer h5 {
-  margin-left: 15px;
-  font-size: 12px;
+/*Color de fondo de toda la web*/
+body {
+  background-color: #F4F4F4;
 }
 
-/*PÁGINA CONTACTO*/
-/*PÁGINA CONTACTO - REDES SOCIALES*/
-.Gridredes ul a {
-  display: inline-block;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-}
-
-/*PÁGINA CONTACTO - FORMULARIO*/
-.contacto {
-  margin-left: 40px;
-  margin-top: 40px;
-  padding-bottom: 20px;
-}
-.contacto h3 {
-  color: #E7246E;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.form-group {
-  color: #49516F;
-  width: 450;
-  margin: 0px;
-  padding: 0px;
-}
-.form-group select {
-  width: 40%;
-  font-size: 12px;
-  border-style: solid;
-  border-width: 0.2px;
-}
-.form-group label {
-  font-weight: bold;
-  font-size: 18px;
-  padding-left: 0px;
-}
-.form-group input {
-  width: 40%;
-  font-size: 12px;
-  border-style: solid;
-  border-width: 0.2px;
-}
-.form-group textarea {
-  width: 40%;
-  font-size: 12px;
-  border-style: solid;
-  border-width: 0.2px;
-  margin-top: 5px;
-}
-
-.btn {
-  width: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 0px;
-}
-
-/*PÁGINA GALERIA*/
-.ContenedorCarrusel h5 {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* vista desktop */
-@media only screen and (min-width: 768px) {
-  .ContenedorCarrusel {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 0px;
-    column-gap: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-  }
-}
-/* vista mobile */
-@media only screen and (max-width: 767px) {
-  .ContenedorCarrusel {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 0px;
-    column-gap: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-  }
-}
-/*INICIO*/
+/*INICIO - MAIN*/
 /* vista desktop */
 @media only screen and (min-width: 768px) {
   .Inicio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    row-gap: none;
+    column-gap: none;
   }
 
   .presentacion1 {
@@ -202,12 +97,12 @@ footer h5 {
   }
 
   .presentacion3 {
-    color: #49516F;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
     column-gap: 30px;
+    color: #49516F;
     padding: 0px;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -237,6 +132,8 @@ footer h5 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    row-gap: none;
+    column-gap: none;
     align-items: center;
   }
 
@@ -300,9 +197,35 @@ footer h5 {
   }
   .videoinicio img {
     width: 100%;
+    height: auto;
   }
 }
-/*PÁGINA NOSOTROS*/
+/*PAGINA SERVICIOS - MAIN*/
+.card-body h1 {
+  font-size: 25px;
+}
+
+/*PÁGINA CONTACTO - MAIN*/
+.contacto {
+  margin-left: 40px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+.contacto h3 {
+  color: #E7246E;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.Gridredes ul a {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/*PÁGINA NOSOTROS - MAIN*/
 .main_nosotros {
   background-image: url("../img/imagen33.png");
   background-size: 100%;
@@ -322,6 +245,7 @@ footer h5 {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(5);
   row-gap: 30px;
+  column-gap: none;
   padding: 40px;
 }
 
@@ -331,4 +255,86 @@ footer h5 {
   font-style: oblique;
   text-align: center;
   font-weight: bold;
+}
+
+/*PÁGINA CONTACTO - BOTON*/
+.btn {
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+/*PÁGINA GALERIA - CARRUSEL*/
+.ContenedorCarrusel h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* vista desktop */
+@media only screen and (min-width: 768px) {
+  .ContenedorCarrusel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+}
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  .ContenedorCarrusel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+}
+/*PÁGINA CONTACTO - FORMULARIO*/
+.form-group {
+  color: #49516F;
+  width: 450;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.form-group select, .form-group textarea, .form-group input {
+  width: 40%;
+  height: auto;
+  font-size: 12px;
+  border-style: solid;
+  border-width: 0.2px;
+}
+.form-group label {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 0px;
+}
+.form-group textarea {
+  margin-top: 5px;
+}
+
+/*FOOTER DE TODA LA WEB*/
+footer {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #1B2030;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer h5 {
+  margin-left: 15px;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

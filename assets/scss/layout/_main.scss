@@ -1,10 +1,15 @@
-/*INICIO*/
+/*Color de fondo de toda la web*/
+
+body{
+    background-color: $ColorFondo;
+}
+
+/*INICIO - MAIN*/
 
 /* vista desktop */
 @media only screen and (min-width: 768px){
     .Inicio{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
+        @include PropiedadesGrid (grid,repeat(2,1fr),none,none,none);
     }
     .presentacion1{
         color: $ColorTexto;
@@ -34,12 +39,8 @@
         text-decoration: none;
     }
     .presentacion3{
+        @include PropiedadesGrid (grid,repeat(2,1fr),repeat(2,1fr),20px,30px);
         color:$ColorTexto;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-        row-gap: 20px;
-        column-gap: 30px;
         padding: 0px;
         margin-bottom: 40px;
         margin-top: 40px;
@@ -64,9 +65,7 @@
 /* vista mobile */
 @media only screen and (max-width: 767px){
     .Inicio{
-        display:grid;
-        grid-template-columns:repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
+        @include PropiedadesGrid (grid,repeat(1,1fr),repeat(3,1fr),none,none);
         align-items: center;
     }
     .presentacion1{
@@ -96,11 +95,7 @@
     }
     .presentacion3{
         color:$ColorTexto;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-        row-gap: 20px;
-        column-gap: 30px;
+        @include PropiedadesGrid (grid,repeat(2,1fr),repeat(2,1fr),20px,30px);
         padding: 0px;
         margin-bottom: 50px;
         margin-top: 50px;
@@ -121,8 +116,61 @@
         padding:20px;
         margin-bottom: 3px;
         img{
-            width: 100%;
+            @include Sizes (100%, auto);
         }
     }
 }
+
+/*PAGINA SERVICIOS - MAIN*/
+
+.card-body{
+    h1{
+        font-size: 25px;
+    }
+}
     
+/*PÁGINA CONTACTO - MAIN*/
+.contacto{    
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    h3{
+        color: $ColorRosa;
+        font-weight:bold;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+.Gridredes ul a{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/*PÁGINA NOSOTROS - MAIN*/
+
+.main_nosotros {
+    background-image: url("../img/imagen33.png");
+    background-size: 100%;
+    background-position: center;
+    h4{
+        font-size: 35px;
+        color: $ColorBlanco;
+        text-align: center;
+        font-weight:bold;
+        padding-top: 40px;
+        padding-bottom:10px;
+    }
+}
+.nosotros{
+    @include PropiedadesGrid (grid,repeat(1,1fr),repeat(5),30px,none);
+    padding: 40px;
+}
+.fila{
+    font-size: 20px;
+    color:$ColorBlanco;
+    font-style: oblique;
+    text-align: center;
+    font-weight:bold;
+}

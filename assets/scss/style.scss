@@ -1,12 +1,15 @@
-@import "variables";
-@import "general";
-@import "navegador";
-@import "footer";
-@import "contacto";
-@import "galeria";
-@import "index";
-@import "nosotros";
-@import "servicios";
+/*Estilo de toda la web*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@import "../scss/utilities/imports";
+
+
+
 
 
 
