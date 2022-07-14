@@ -44,7 +44,6 @@ nav ul li {
     flex-wrap: wrap;
     align-items: center;
   }
-
   .navbar-toggler {
     background-color: white;
   }
@@ -64,7 +63,6 @@ body {
     row-gap: none;
     column-gap: none;
   }
-
   .presentacion1 {
     color: #49516F;
     font-size: 30px;
@@ -73,13 +71,11 @@ body {
     font-weight: bold;
     text-decoration: none;
   }
-
   .GF {
     color: #E7246E;
     text-decoration: none;
     text-emphasis: none;
   }
-
   .presentacion2 {
     display: flex;
     padding-top: 60px;
@@ -87,7 +83,6 @@ body {
     font-size: 20px;
     text-decoration: none;
   }
-
   .presentacion2bis {
     display: flex;
     padding-top: 5px;
@@ -95,7 +90,6 @@ body {
     font-size: 20px;
     text-decoration: none;
   }
-
   .presentacion3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -108,7 +102,6 @@ body {
     margin-top: 40px;
     margin-left: 60px;
   }
-
   .desc {
     list-style: none;
     text-decoration: none;
@@ -120,7 +113,6 @@ body {
   .desc li {
     margin-left: 15px;
   }
-
   .videoinicio {
     padding: 20px;
     margin-left: 80px;
@@ -136,7 +128,6 @@ body {
     column-gap: none;
     align-items: center;
   }
-
   .presentacion1 {
     color: #49516F;
     font-size: 30px;
@@ -144,12 +135,10 @@ body {
     margin-top: 60px;
     font-weight: bold;
   }
-
   .GF {
     color: #E7246E;
     text-decoration: none;
   }
-
   .presentacion2 {
     display: flex;
     padding-top: 60px;
@@ -157,7 +146,6 @@ body {
     font-size: 20px;
     text-decoration: none;
   }
-
   .presentacion2bis {
     display: flex;
     padding-top: 5px;
@@ -165,7 +153,6 @@ body {
     font-size: 20px;
     text-decoration: none;
   }
-
   .presentacion3 {
     color: #49516F;
     display: grid;
@@ -178,7 +165,6 @@ body {
     margin-top: 50px;
     margin-left: 20px;
   }
-
   .desc {
     list-style: none;
     text-decoration: none;
@@ -190,7 +176,6 @@ body {
   .desc li {
     margin-left: 15px;
   }
-
   .videoinicio {
     padding: 20px;
     margin-bottom: 3px;
