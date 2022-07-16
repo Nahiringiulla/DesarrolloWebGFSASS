@@ -65,7 +65,7 @@ body{
 /* vista mobile */
 @media only screen and (max-width: 767px){
     .Inicio{
-        @include PropiedadesGrid (grid,repeat(1,1fr),repeat(3,1fr),none,none);
+        @include PropiedadesGrid (grid,repeat(1,1fr),auto,none,none);
         align-items: center;
     }
     .presentacion1{
@@ -97,7 +97,7 @@ body{
         color:$ColorTexto;
         @include PropiedadesGrid (grid,repeat(2,1fr),repeat(2,1fr),20px,30px);
         padding: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         margin-top: 50px;
         margin-left:20px ;
     }
@@ -113,8 +113,10 @@ body{
         }
     }
     .videoinicio{
-        padding:20px;
-        margin-bottom: 3px;
+        padding-top:20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
         img{
             @include Sizes (100%, auto);
         }
