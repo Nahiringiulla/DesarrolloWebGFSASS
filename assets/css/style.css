@@ -221,8 +221,9 @@ body {
 .main_nosotros h4 {
   font-size: 35px;
   color: white;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
+  padding-left: 40px;
   padding-top: 40px;
   padding-bottom: 10px;
 }
@@ -240,7 +241,7 @@ body {
   font-size: 20px;
   color: white;
   font-style: oblique;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
 }
 
