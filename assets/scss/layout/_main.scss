@@ -9,7 +9,7 @@ body{
 /* vista desktop */
 @media only screen and (min-width: 768px){
     .Inicio{
-        @include PropiedadesGrid (grid,repeat(2,1fr),none,none,none);
+        @include PropiedadesGrid (grid,repeat(2,1fr),auto,none,none);
     }
     .presentacion1{
         color: $ColorTexto;
@@ -58,8 +58,12 @@ body{
         }
     }
     .videoinicio{
-        padding:20px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
         margin-left: 80px;
+        img{
+            @include Sizes (90%, auto);
+        }
     }
 }
 /* vista mobile */
@@ -145,7 +149,7 @@ body{
         margin-bottom: 30px;
     }
 }
-.Gridredes ul a{
+.redes ul a{
     display: inline-block;
     align-items: center;
     justify-content: space-between;

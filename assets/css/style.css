@@ -67,7 +67,7 @@ body {
   .Inicio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: none;
+    grid-template-rows: auto;
     row-gap: none;
     column-gap: none;
   }
@@ -122,8 +122,13 @@ body {
     margin-left: 15px;
   }
   .videoinicio {
-    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     margin-left: 80px;
+  }
+  .videoinicio img {
+    width: 90%;
+    height: auto;
   }
 }
 /* vista mobile */
@@ -213,7 +218,7 @@ body {
   margin-bottom: 30px;
 }
 
-.Gridredes ul a {
+.redes ul a {
   display: inline-block;
   align-items: center;
   justify-content: space-between;
